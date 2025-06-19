@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Complex Template",
-  description: "Created by saifuddm",
+  title: "A new idea",
+  description: "Complex template to start a new project by saifuddm",
 };
 
 export default function RootLayout({
@@ -27,7 +27,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col items-center justify-center h-screen font-mono">
+          {children}
+        </div>
       </body>
     </html>
   );
